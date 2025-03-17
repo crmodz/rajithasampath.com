@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajithalk - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #000000;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* Background Image */
+        .hero {
+            background: url('wallpaper4.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            position: relative;
+            animation: fadeIn 2s ease-in-out;
+        }
+/* Animation for Hero Section */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Animated text */
+        h1 {
+            font-size: 4em;
+            font-weight: 600;
+            margin-bottom: 20px;
+            animation: slideUp 1s ease-out;
+        }
+
+        @keyframes slideUp {
+            0% {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        p {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+            animation: slideUp 1.5s ease-out;
+        }
+
+        /* Button Style */
+        .btn-primary {
+            background-color: #ff0000;
+            color: white;
+            padding: 15px 40px;
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 30px;
+            transition: background-color 0.3s ease;
+            animation: slideUp 2s ease-out;
+        }
+
+        .btn-primary:hover {
+            background-color: #006aff;
+        }
+
+        /* Animation for Images */
+        .image-gallery {
+            display: flex;
+justify-content: center;
+            gap: 20px;
+            margin-top: 50px;
+        }
+
+        .image-gallery img {
+            width: 80px;
+            height: 80px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            animation: fadeInImage 2s ease-in-out forwards;
+        }
+
+        .image-gallery img:nth-child(1) {
+            animation-delay: 0.5s;
+        }
+
+        .image-gallery img:nth-child(2) {
+            animation-delay: 1s;
+        }
+
+        .image-gallery img:nth-child(3) {
+            animation-delay: 1.5s;
+        }
+
+        /* Fade-in Image Animation */
+        @keyframes fadeInImage {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Navigation Bar */
+        nav {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 10;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            font-size: 1.2em;
+        }
+
+        nav a:hover {
+            color: #ff0000;
+        }
+
+    </style>
+</head>
+<body>
+    
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Hero Section with Background Image and Animations -->
+    <section class="hero">
+        <div>
+            <h1>Welcome to My Offcial Website</h1>
+            <p>We design and build any website,application,logoes,videos for you.</p>
+            <a href="services.html" class="btn-primary">Discover Our Services</a>
+        </div>
+    </section>
+
+</body>
+</html>
